@@ -15,6 +15,15 @@ msg.indexOf('m');
 //repeat 10 times
 const repeatTenTimes = msg.repeat(10);
 
+//array of words
+const words = msg.split(' ');
+
+//array of cahrs
+const chars = msg.split('');
+
+//just output array
+const strCopy = msg.split();
+
 
 
 console.log(angryMsg);
