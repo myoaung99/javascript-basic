@@ -24,6 +24,12 @@ const chars = msg.split('');
 //just output array
 const strCopy = msg.split();
 
+//trim the whitespaces
+const trimMsg = msg.trim();
+
+//to lower
+const whisper = angryMsg.toLocaleLowerCase();
+
 
 
 console.log(angryMsg);
