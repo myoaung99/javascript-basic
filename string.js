@@ -12,6 +12,9 @@ const len = msg.length
 msg.charAt(3);
 msg.indexOf('m');
 
+//repeat 10 times
+const repeatTenTimes = msg.repeat(10);
+
 
 
 console.log(angryMsg);
