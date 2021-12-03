@@ -36,3 +36,13 @@ console.log(angryMsg);
 console.log(greeting);
 console.log(len);
 
+let num = Math.random();
+if(num < 0.5) {
+    console.log("YOUR NUMBER IS LESS THAN 0.5.");
+    console.log(num);
+}
+else if(num >= 0.5){
+    console.log("YOUR NUMBER IS GREATER THAN 0.5.");
+    console.log(num);
+}
+
