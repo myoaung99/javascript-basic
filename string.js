@@ -73,7 +73,16 @@
 //     console.log("Password is too short. Try again.");
 // }
 
-const age = prompt("Enter your age.");
-if ((age >=0 && age < 5) || age >= 65 && age <100){
-    console.log("You are go to free.")
+// const age = prompt("Enter your age.");
+// if ((age >=0 && age < 5) || age >= 65 && age <100){
+//     console.log("You are go to free.")
+// }
+
+
+//Object literals
+const person = {
+    firstName: "Mick",
+    lastName: "Jordan"
 }
+
+console.log(person.firstName)
