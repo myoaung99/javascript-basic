@@ -85,7 +85,7 @@ const person = {
     lastName: "Jordan",
     age: 19,
     gender: "Male",
-    isAlive: True
+    isAlive: true
 }
 
 console.log(person.isAlive)
