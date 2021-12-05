@@ -82,7 +82,10 @@
 //Object literals
 const person = {
     firstName: "Mick",
-    lastName: "Jordan"
+    lastName: "Jordan",
+    age: 19,
+    gender: "Male",
+    isAlive: "True"
 }
 
 console.log(person.firstName)
