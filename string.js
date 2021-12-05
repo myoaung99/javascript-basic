@@ -92,11 +92,75 @@
 
 //Arguments
 
-function rant(message) {
-    console.log(message.toUpperCase());
-    console.log(message.toUpperCase());
-    console.log(message.toUpperCase());
-}
+// function rant(message) {
+//     console.log(message.toUpperCase());
+//     console.log(message.toUpperCase());
+//     console.log(message.toUpperCase());
+// }
 
-rant('i love her.');
+// rant('i love her.');
 
+// function getDiceNum(){
+//     return Math.floor((Math.random() * 6) + 1);
+// }
+
+// function isSnakeEyes(dice1, dice2){
+//     if ((dice1 === 1) && (dice2 === 1)){
+//         console.log("Snake Eyes!");
+//         gotSnakeEyes = true;
+//     }else{
+//         console.log("Not Snake Eyes!");
+//     }
+// }
+
+// function rollDice(){
+//     dice1 = getDiceNum();
+//     dice2 = getDiceNum();
+//     isSnakeEyes(dice1, dice2);
+// }
+
+// gotSnakeEyes = false;
+
+// while (!gotSnakeEyes){
+//     rollDice()
+// }
+
+//Capitalizeer
+
+// function capitalizer(str){
+//     let completeString = str[0].toUpperCase() + str.slice(1);
+//     console.log(completeString);
+// }
+
+// days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
+
+// function returnDay(numOfDay){
+//     if ((numOfDay <=0) || (numOfDay >7)){
+//         return null;
+//     }
+
+//     return days[numOfDay -1];
+// }
+
+// function isShortsWeather(temperature){
+//     if (temperature >= 75){
+//         return true;
+//     }
+
+//     return false;
+// }
+
+// function lastElement(temp){
+//     if (temp.length === 0){
+//         return null;
+//     }
+//     return temp[temp.length - 1];
+// }
+
+// function sumArray(array){
+//     let sum = 0;
+//     for (i=0; i < array.length; i++){
+//         sum += array[i];
+//     }
+//     return sum;
+// }
