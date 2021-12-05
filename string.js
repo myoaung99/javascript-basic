@@ -99,3 +99,4 @@ function rant(message) {
 }
 
 rant('i love her.');
+
