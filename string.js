@@ -80,12 +80,22 @@
 
 
 //Object literals
-const person = {
-    firstName: "Mick",
-    lastName: "Jordan",
-    age: 19,
-    gender: "Male",
-    isAlive: true
+// const person = {
+//     firstName: "Mick",
+//     lastName: "Jordan",
+//     age: 19,
+//     gender: "Male",
+//     isAlive: true
+// }
+
+// console.log(person.isAlive)
+
+//Arguments
+
+function rant(message) {
+    console.log(message.toUpperCase());
+    console.log(message.toUpperCase());
+    console.log(message.toUpperCase());
 }
 
-console.log(person.isAlive)
+rant('i love her.');
