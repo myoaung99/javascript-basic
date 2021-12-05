@@ -88,4 +88,4 @@ const person = {
     isAlive: True
 }
 
-console.log(person.firstName)
+console.log(person.isAlive)
