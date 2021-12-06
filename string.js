@@ -164,3 +164,61 @@
 //     }
 //     return sum;
 // }
+
+//Resurcion vs For loop
+
+// function numRange(n){
+//     for (let i=n; i>0; i--){
+//         console.log(i);
+//     }
+//     console.log("Yahoo!");
+// }
+// numRange(3);
+
+// function numRangeResurcion(n){
+//     if(n <= 0){
+//         console.log("Yahoo!");
+//         return;
+//     }
+//     console.log(n)
+//     numRangeResurcion(n-1);
+// }
+// numRangeResurcion(7);
+
+// function sumRange(n){
+//     let total = 0;
+//     for(let i=n; i>0; i--){
+//         total += i;
+//     }
+//     return total;
+// }
+// console.log(sumRange(3));
+
+// function sumRangeRecursion(n, total = 0){
+//     if (n <= 0){
+//         return total;
+//     }
+//     total += n;
+//     return sumRangeRecursion(n-1, total + n)
+// }
+// console.log(sumRange(5));
+
+// myArray = [1,3,4,2];
+
+// function sumArr(arr, n){
+//     let sum = 0;
+//     for (let i=0; i<n; i++){
+//         sum += arr[i];
+//     }
+//     console.log(sum);
+// }
+// sumArr(myArray, 3);
+
+function sumRangeRecursion(n, total = 0){
+    if (n <= 0){
+        return total;
+    }
+    return sumRangeRecursion(n-1, total + n);
+}
+
+console.log(sumRangeRecursion(5));
