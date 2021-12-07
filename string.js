@@ -214,11 +214,42 @@
 // }
 // sumArr(myArray, 3);
 
-function sumRangeRecursion(n, total = 0){
-    if (n <= 0){
-        return total;
-    }
-    return sumRangeRecursion(n-1, total + n);
+// function sumRangeRecursion(n, total = 0){
+//     if (n <= 0){
+//         return total;
+//     }
+//     return sumRangeRecursion(n-1, total + n);
+// }
+
+// console.log(sumRangeRecursion(5));
+
+const maximum = parseInt(prompt("Enter the maximum number."));
+if(!maximum){
+    maximum = parseInt(prompt("Enter the valid number."));
 }
 
-console.log(sumRangeRecursion(5));
+const targetNum = Math.floor(Math.random() * maximum + 1);
+
+let guess = prompt("Enter your guess");
+let attemps = 1;
+
+while (parseInt(guess) !== targetNum){
+    if(guess === "q") break;
+    attemps++;
+    if( parseInt(guess) > targetNum){
+        console.log("Too High. Try to guess again.");
+        guess = prompt("Enter your guess");
+    }else {
+        console.log("Too Low. Try to guess again.");
+        guess = prompt("Enter your guess");
+    }
+}
+
+if (guess === "q"){
+    console.log("Qutting in process. Thanks for trying out.")
+}else{
+    console.log("Congrats");
+console.log(`You Win!. You just try with ${attemps} attemps.`);
+}
+
+
