@@ -252,8 +252,33 @@
 //     console.log(`You Win!. You just try with ${attemps} attemps.`);
 // }
 
-for (let char of "hello world"){
-    console.log(char);
-}
+// for (let char of "hello world"){
+//     console.log(char);
+// }
 
+
+// let myArr = [];
+// for (let i = 1; i<10; i++){
+//     myArr.push(i);
+// }
+// console.log(myArr)
+
+// for (let num of myArr){
+//     console.log(num * num);
+// }
+
+// const testScore = {
+//     x: 3,
+//     y: 4,
+//     z: 5
+// }
+
+// let sum = 0;
+// let score = Object.values(testScore);
+// for(let value of score){
+//     sum += value;
+// }
+
+// console.log(sum);
+// console.log(sum/score.length);
 
