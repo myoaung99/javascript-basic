@@ -27,16 +27,31 @@ while (isOn){
         if(todo.length === 0){
             console.log("There is nothing in the list.")
         }else{
-            //if there are lists 
+
+            // Display the todo list 
             console.log("********");
             for (let list of todo){
                 console.log(`${todo.indexOf(list)} : ${list}.`);
             }
+            console.log("********");
         }
         
     }else if(userInput === "delete"){
-        deleteIndex = prompt("Enter the index of Todo to delete.")
-        
+        deleteIndex = parseInt(prompt("Enter the index of Todo to delete."));
+        if(deleteIndex >= 0){
+            todo.splice(deleteIndex, 1);
+
+            if(todo.length > 0){
+                // Display the todo list 
+                console.log("********");
+                for (let list of todo){
+                    console.log(`${todo.indexOf(list)} : ${list}.`);
+                }
+                console.log("********");
+            }            
+        }
+    }else{
+        console.log("Enter the valid command.");
     }
 }
 
