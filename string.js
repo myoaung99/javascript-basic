@@ -223,33 +223,37 @@
 
 // console.log(sumRangeRecursion(5));
 
-const maximum = parseInt(prompt("Enter the maximum number."));
-if(!maximum){
-    maximum = parseInt(prompt("Enter the valid number."));
-}
+// const maximum = parseInt(prompt("Enter the maximum number."));
+// if(!maximum){
+//     maximum = parseInt(prompt("Enter the valid number."));
+// }
 
-const targetNum = Math.floor(Math.random() * maximum + 1);
+// const targetNum = Math.floor(Math.random() * maximum + 1);
 
-let guess = prompt("Enter your guess");
-let attemps = 1;
+// let guess = prompt("Enter your guess");
+// let attemps = 1;
 
-while (parseInt(guess) !== targetNum){
-    if(guess === "q") break;
-    attemps++;
-    if( parseInt(guess) > targetNum){
-        console.log("Too High. Try to guess again.");
-        guess = prompt("Enter your guess");
-    }else {
-        console.log("Too Low. Try to guess again.");
-        guess = prompt("Enter your guess");
-    }
-}
+// while (parseInt(guess) !== targetNum){
+//     if(guess === "q") break;
+//     attemps++;
+//     if( parseInt(guess) > targetNum){
+//         console.log("Too High. Try to guess again.");
+//         guess = prompt("Enter your guess");
+//     }else {
+//         console.log("Too Low. Try to guess again.");
+//         guess = prompt("Enter your guess");
+//     }
+// }
 
-if (guess === "q"){
-    console.log("Qutting in process. Thanks for trying out.")
-}else{
-    console.log("Congrats");
-console.log(`You Win!. You just try with ${attemps} attemps.`);
+// if (guess === "q"){
+//     console.log("Qutting in process. Thanks for trying out.")
+// }else{
+//     console.log("Congrats");
+//     console.log(`You Win!. You just try with ${attemps} attemps.`);
+// }
+
+for (let char of "hello world"){
+    console.log(char);
 }
 
 
