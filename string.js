@@ -282,3 +282,27 @@
 // console.log(sum);
 // console.log(sum/score.length);
 
+//function Expression
+
+// let square = function (num){
+//     return Math.pow(num, 2);
+// }
+
+// function makeAgeDecider(min, max){
+//     return function(num){
+//         return num>=min && num<=max;
+//     }
+// }
+
+//Methods
+
+let myObj = {
+    "name": "dev.myint",
+    "drink": function(){
+        console.log("Drinking water.")
+    },
+    eat(){
+        console.log("Eating rice.")
+    }
+}
+
