@@ -1,10 +1,9 @@
 let userInput = " ";
-let commends = ["new", "list", "delete", "quit"];
 let todo = [];
 let isOn = true;
 
 while (isOn){
-    userInput = prompt("Enter the instruction").toLowerCase();
+    userInput = prompt("What would you like to do?").toLowerCase();
 
     //Exit the app
     if(userInput === "quit"){
@@ -38,18 +37,24 @@ while (isOn){
         
     }else if(userInput === "delete"){
         deleteIndex = parseInt(prompt("Enter the index of Todo to delete."));
-        if(deleteIndex >= 0){
+        if(!Number.isNaN(deleteIndex)){
             todo.splice(deleteIndex, 1);
-
-            if(todo.length > 0){
-                // Display the todo list 
-                console.log("********");
-                for (let list of todo){
-                    console.log(`${todo.indexOf(list)} : ${list}.`);
-                }
-                console.log("********");
-            }            
+            console.log(`Ok, deleted index: ${deleteIndex}`)
+        }else{
+            console.log("Unknown index.")
         }
+        // if(deleteIndex >= 0){
+        //     todo.splice(deleteIndex, 1);
+
+        //     if(todo.length > 0){
+        //         // Display the todo list 
+        //         console.log("********");
+        //         for (let list of todo){
+        //             console.log(`${todo.indexOf(list)} : ${list}.`);
+        //         }
+        //         console.log("********");
+        //     }            
+        // }
     }else{
         console.log("Enter the valid command.");
     }
