@@ -1,3 +1,5 @@
+'use strict';
+
 // const msg = "hey leave me alone. i dont want to see you plz.";
 
 // //to uppercase method
@@ -472,3 +474,9 @@
 const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20];
 
 let max = Math.max(...numbers);
+
+let driverLicense = false;
+const isPass = true;
+
+if (isPass) driver = true;
+if (driverLicense) console.log("I can drive :D 🚗")
