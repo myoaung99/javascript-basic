@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 
 // const msg = "hey leave me alone. i dont want to see you plz.";
 
@@ -32,8 +32,6 @@
 // //to lower
 // const whisper = angryMsg.toLocaleLowerCase();
 
-
-
 // console.log(angryMsg);
 // console.log(greeting);
 // console.log(len);
@@ -60,7 +58,6 @@
 //     console.log("You are a senior. You pay $10.");
 // }
 
-
 // const password = prompt("Enter your new password.");
 
 // // password must 6+ characters
@@ -79,7 +76,6 @@
 // if ((age >=0 && age < 5) || age >= 65 && age <100){
 //     console.log("You are go to free.")
 // }
-
 
 //Object literals
 // const person = {
@@ -258,7 +254,6 @@
 //     console.log(char);
 // }
 
-
 // let myArr = [];
 // for (let i = 1; i<10; i++){
 //     myArr.push(i);
@@ -394,8 +389,6 @@
 //     return array.every(num => num % 2 === 0)
 // }
 
-
-
 // const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20];
 
 // const total = numbers.reduce((total, num) => {
@@ -471,12 +464,25 @@
 //     return highestRate;
 // })
 
-const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20];
+// const numbers = [
+//   1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
+// ];
 
-let max = Math.max(...numbers);
+// let max = Math.max(...numbers);
 
-let driverLicense = false;
-const isPass = true;
+// let driverLicense = false;
+// const isPass = true;
 
-if (isPass) driver = true;
-if (driverLicense) console.log("I can drive :D 🚗")
+// if (isPass) driver = true;
+// if (driverLicense) console.log("I can drive :D 🚗");
+
+// console.log();
+
+const numbers = [
+  1, 1, 3, 3, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
+];
+
+const tally = numbers.reduce((numbers, num) => {
+  numbers[num] = (numbers[num] || 0) + 1;
+  return numbers;
+}, {});
