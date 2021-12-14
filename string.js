@@ -478,15 +478,18 @@
 
 // console.log();
 
-const numbers = [
-  1, 1, 3, 3, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
-];
+// const numbers = [
+//   1, 1, 3, 3, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
+// ];
 
 // const tally = numbers.reduce((numbers, num) => {
 //   numbers[num] = (numbers[num] || 0) + 1;
 //   return numbers;
 // }, {});
 
-for (let i = numbers.length - 1; i >= 0; i--) {
-  console.log(numbers[i]);
-}
+// for (let i = numbers.length - 1; i >= 0; i--) {
+//   console.log(numbers[i]);
+// }
+
+new d = new Date();
+
