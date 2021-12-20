@@ -491,6 +491,6 @@
 //   console.log(numbers[i]);
 // }
 
-new d = new Date();
+// new d = new Date();
 
 // Dom
