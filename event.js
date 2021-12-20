@@ -26,6 +26,7 @@ input.addEventListener("keydown", (e) => {
 });
 
 window.addEventListener("keydown", (e) => {
+  console.dir(e);
   switch (e.code) {
     case "ArrowUp":
       console.log("UP");
