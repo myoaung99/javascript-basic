@@ -18,3 +18,28 @@ btn3.addEventListener("dblclick", () => {
 btn3.onmouseenter = () => {
   console.log("Stay away from me!!");
 };
+
+const input = document.querySelector("input");
+
+input.addEventListener("keydown", (e) => {
+  console.log(e.key);
+});
+
+window.addEventListener("keydown", (e) => {
+  switch (e.code) {
+    case "ArrowUp":
+      console.log("UP");
+      break;
+    case "ArrowDown":
+      console.log("DOWN");
+      break;
+    case "ArrowLeft":
+      console.log("Left");
+      break;
+    case "ArrowRight":
+      console.log("Right");
+      break;
+    default:
+      console.log("Ignore");
+  }
+});
