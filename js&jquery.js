@@ -30,3 +30,7 @@ function Car(name, wheel, door, color) {
 }
 
 let toyota = new Car("Toyota", "4", "4", "brown");
+
+var msg = "Home sweet home";
+
+console.log(msg.length);
