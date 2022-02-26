@@ -1,28 +1,31 @@
 const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
-arr.forEach((e) => console.log(e));
-const arr2 = arr.map((e) => e);
-console.log(arr2);
-const oddArr = arr.filter((e) => e % 2 == 1);
-console.log(oddArr);
+console.log(...arr);
+console.log(Math.max(...arr));
 
-arr.filter((e) => e > 5);
+// arr.forEach((e) => console.log(e));
+// const arr2 = arr.map((e) => e);
+// console.log(arr2);
+// const oddArr = arr.filter((e) => e % 2 == 1);
+// console.log(oddArr);
 
-const aa = arr.filter((e) => e % 2 == 1 && e > 6);
-console.log(aa);
+// arr.filter((e) => e > 5);
 
-const max = arr.reduce((max, num) => {
-  if (num > max) return num;
-  return max;
-});
+// const aa = arr.filter((e) => e % 2 == 1 && e > 6);
+// console.log(aa);
 
-console.log(max);
+// const max = arr.reduce((max, num) => {
+//   if (num > max) return num;
+//   return max;
+// });
 
-const car = {
-  name: "ok",
-  drive() {
-    console.log(`${this.name} is driving.`);
-  },
-};
+// console.log(max);
 
-car.drive();
+// const car = {
+//   name: "ok",
+//   drive() {
+//     console.log(`${this.name} is driving.`);
+//   },
+// };
+
+// car.drive();
