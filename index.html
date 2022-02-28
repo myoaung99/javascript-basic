@@ -9,6 +9,15 @@
       body {
         transition: 0.5s;
       }
+      .resultImg{
+        margin: 0 10px;
+      }
+      #search-result-text{
+        text-align: center;
+        text-transform: capitalize;
+        font-size: 2rem;
+      }
+      
     </style>
   </head>
 
@@ -28,14 +37,31 @@
 
     <button id="v3">Click me version 3</button> -->
 
-    <h1>Input</h1>
-    <input type="text" />
+    <!-- <h1>Input</h1>
+    <input type="text" /> -->
     <!-- <script src="string.js"></script> -->
     <!-- <script src="todo_app.js"></script> -->
     <!-- <script src="event.js"></script> -->
     <!-- <script src="input&change.js"></script> -->
     <!-- <script src="./callStack.js"></script> -->
     <!-- <script src="./promise.js"></script> -->
-    <script src="async.js"></script>
+    <!-- <script src="async.js"></script> -->
+
+    <!-- <button>Get Car</button>
+    <ul id="cars"></ul> -->
+
+    <h1>Movie Search</h1>
+    <form action="" id="search-form">
+      <input type="text" name="query" placeholder="Enter movie title">
+      <button>Search</button>
+    </form>
+    <div id="search-result-text">
+     
+    </div>
+    <div id="img-container"></div>
+
+    <script src="./axios/dist/axios.min.js"></script>
+    <!-- <script src="request.js"></script> -->
+    <script src="queryString.js"></script>
   </body>
 </html>
