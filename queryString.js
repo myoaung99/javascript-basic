@@ -3,12 +3,17 @@ const form = document.querySelector("#search-form");
 const searchResultText = document.querySelector("#search-result-text");
 
 const fetchMovie = async(query)=>{
-  const searchTerm = query;
+  try{const searchTerm = query;
   const config = {params: {q: searchTerm}}
   const res = await axios.get('https://api.tvmaze.com/search/shows', config);
   console.log(res.data);
   showImg(res.data);
-  showText(query,res.data);
+  showText(query,res.data);}
+  catch(e){
+    searchResultText.innerHTML = " ";
+    searchResultText.innerHTML = `<h4>Cannot Connect. Connection timeout :(`
+  }
+  
 }
 
 const showImg = (movies)=>{
